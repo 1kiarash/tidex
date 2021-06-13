@@ -54,7 +54,7 @@ def eth_evaluation (data): # check for any change in price in eth
 def text_me(data):
     auth_key = '4369417141692B757A596F76744F477362317A7A57575535676352326666734D'
     url = "https://api.kavenegar.com/v1/%s/sms/send.json?" %auth_key
-    payload = {'receptor' : '09358188018' ,
+    payload = {'receptor' : '#phonenumber' ,
                 'message' : '%f%D9%88%D9%82%D8%AA%D8%B4%D9%87%20%D8%A8%D8%AE%D8%B1%DB%8C%21%0A-%DA%A9%DB%8C%D8%A7' % data
                 }
     res = requests.post(url,data=payload)
